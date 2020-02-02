@@ -49,9 +49,14 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # remember to return the updated hash
   holiday_hash[:fall][:columbus_day] = "Flags", "Italian Food", "Parade Floats"
   holiday_hash
-  
 end
 
+def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  # code here
+  # remember to return the updated hash
+  holiday_hash[:winter][:valentines_day] = "Flags", "Italian Food", "Parade Floats"
+  holiday_hash
+end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
@@ -77,8 +82,9 @@ holiday_hash.each do |season, holiday|
       puts "  " + holiday + " " + supplies
     end
   end
-
 end
+
+
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
