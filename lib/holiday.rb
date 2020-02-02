@@ -41,10 +41,6 @@ def add_supply_to_memorial_day(holiday_hash, supply)
     decorations << "Grill" 
     puts decorations
   end
-  holiday_hash[:spring].each do |holiday, decorations|
-    decorations << "Table Cloth" 
-    puts decorations
-  end
 end
 
 
